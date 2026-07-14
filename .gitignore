@@ -1,0 +1,15 @@
+.env
+
+.vscode
+
+.idea
+
+bin/
+
+obj/
+
+node_modules/
+
+*.log
+
+*.tmp
