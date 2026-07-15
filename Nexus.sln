@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{F6B40EBF-1CC8-4E08-886E-0457D685B91C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Api", "backend\Nexus.Api\Nexus.Api.csproj", "{183A0A1C-19B0-436D-9F5E-72780658A623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Application", "backend\Nexus.Application\Nexus.Application.csproj", "{9C7C6FDF-E67F-4324-9E15-655D6F08EC75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Domain", "backend\Nexus.Domain\Nexus.Domain.csproj", "{31E0AFFC-2B21-4FC8-9517-A3437DF10361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Infrastructure", "backend\Nexus.Infrastructure\Nexus.Infrastructure.csproj", "{52E4DBB7-8735-4853-B384-21637607ABD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexus.Shared", "backend\Nexus.Shared\Nexus.Shared.csproj", "{3DD168AC-8EB2-49B5-931F-8EB8A767F0DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{183A0A1C-19B0-436D-9F5E-72780658A623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183A0A1C-19B0-436D-9F5E-72780658A623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183A0A1C-19B0-436D-9F5E-72780658A623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183A0A1C-19B0-436D-9F5E-72780658A623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7C6FDF-E67F-4324-9E15-655D6F08EC75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7C6FDF-E67F-4324-9E15-655D6F08EC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7C6FDF-E67F-4324-9E15-655D6F08EC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7C6FDF-E67F-4324-9E15-655D6F08EC75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E0AFFC-2B21-4FC8-9517-A3437DF10361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E0AFFC-2B21-4FC8-9517-A3437DF10361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E0AFFC-2B21-4FC8-9517-A3437DF10361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E0AFFC-2B21-4FC8-9517-A3437DF10361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E4DBB7-8735-4853-B384-21637607ABD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E4DBB7-8735-4853-B384-21637607ABD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E4DBB7-8735-4853-B384-21637607ABD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E4DBB7-8735-4853-B384-21637607ABD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD168AC-8EB2-49B5-931F-8EB8A767F0DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD168AC-8EB2-49B5-931F-8EB8A767F0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD168AC-8EB2-49B5-931F-8EB8A767F0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD168AC-8EB2-49B5-931F-8EB8A767F0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{183A0A1C-19B0-436D-9F5E-72780658A623} = {F6B40EBF-1CC8-4E08-886E-0457D685B91C}
+		{9C7C6FDF-E67F-4324-9E15-655D6F08EC75} = {F6B40EBF-1CC8-4E08-886E-0457D685B91C}
+		{31E0AFFC-2B21-4FC8-9517-A3437DF10361} = {F6B40EBF-1CC8-4E08-886E-0457D685B91C}
+		{52E4DBB7-8735-4853-B384-21637607ABD2} = {F6B40EBF-1CC8-4E08-886E-0457D685B91C}
+		{3DD168AC-8EB2-49B5-931F-8EB8A767F0DC} = {F6B40EBF-1CC8-4E08-886E-0457D685B91C}
+	EndGlobalSection
+EndGlobal
