@@ -6,49 +6,42 @@ public sealed class Organization : AggregateRoot
 {
     private Organization()
     {
-        Name = string.Empty;
     }
 
     public Organization(string name)
     {
-        if (string.IsNullOrWhiteSpace(name))
-            throw new ArgumentException("Organization name cannot be empty.", nameof(name));
-
-        Name = name.Trim();
+        Rename(name);
         IsActive = true;
     }
 
-    public string Name { get; private set; }
+    public string Name { get; private set; } = string.Empty;
 
     public bool IsActive { get; private set; }
-
-   public void Activate()
-    {
-        if (!IsActive)
-        {
-            IsActive = true;
-            MarkAsUpdated();
-        }
-    }
-
-    public void Deactivate()
-    {
-        if (IsActive)
-        {
-            IsActive = false;
-            MarkAsUpdated();
-        }
-    }
 
     public void Rename(string newName)
     {
         if (string.IsNullOrWhiteSpace(newName))
-            throw new ArgumentException(
-                "Organization name cannot be empty.",
-                nameof(newName));
+            throw new DomainException("Organization name cannot be empty.");
 
         Name = newName.Trim();
+        Touch();
+    }
 
-        MarkAsUpdated();
+    public void Activate()
+    {
+        if (IsActive)
+            return;
+
+        IsActive = true;
+        Touch();
+    }
+
+    public void Deactivate()
+    {
+        if (!IsActive)
+            return;
+
+        IsActive = false;
+        Touch();
     }
 }
