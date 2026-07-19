@@ -6,11 +6,11 @@ public abstract class ValueObject
 
     public override bool Equals(object? obj)
     {
-        if (obj is not ValueObject other)
+        if (obj is null || obj.GetType() != GetType())
             return false;
 
-        return GetType() == other.GetType()
-            && GetEqualityComponents().SequenceEqual(other.GetEqualityComponents());
+        return GetEqualityComponents()
+            .SequenceEqual(((ValueObject)obj).GetEqualityComponents());
     }
 
     public override int GetHashCode()
@@ -20,12 +20,8 @@ public abstract class ValueObject
     }
 
     public static bool operator ==(ValueObject? left, ValueObject? right)
-    {
-        return Equals(left, right);
-    }
+        => Equals(left, right);
 
     public static bool operator !=(ValueObject? left, ValueObject? right)
-    {
-        return !Equals(left, right);
-    }
+        => !Equals(left, right);
 }
